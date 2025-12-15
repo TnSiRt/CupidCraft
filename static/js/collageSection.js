@@ -5,11 +5,11 @@ function createCollage() {
 	// Загружаем одинаковый набор фото в оба контейнера
 	for (let i = 1; i <= 20; i++) {
 		let img1 = document.createElement("img");
-		img1.src = `/static/image/photo${i}.jpg`;
+		img1.src = `static/image/photo${i}.jpg`;
 		c1.appendChild(img1);
 
 		let img2 = document.createElement("img");
-		img2.src = `/static/image/photo${i}.jpg`;
+		img2.src = `static/image/photo${i}.jpg`;
 		c2.appendChild(img2);
 	}
 
