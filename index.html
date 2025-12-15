@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MADE D3S4P</title>
+		<link rel='stylesheet' href='style.css'>
+		<link rel="stylesheet" href="static/css/main.css">
+		<link rel="stylesheet" href="static/css/buttonPulse.css">
+		<link rel="stylesheet" href="static/css/association.css">
+		<link rel="stylesheet" href="static/css/collage.css">
+	</head>
+	<body>
+		<section id='start'>
+			<div class='rain_of_hearts' id="hearts"></div>
+			<div class="title">От Артёма своей прицессе</div>
+			<button id="start_btn" class="pulse-btn">Открыть</button>
+		</section>
+		<section id="association">
+			<div class="photocard" id="top">
+				<div class="image-container">
+					<img src="static/image/photo1.jpg" class="card-image" alt="фотка 1">
+					<img src="static/image/photo2.jpg" class="card-image" alt="фотка 2">
+				</div>
+			</div>
+			<div class="title">Ассоциации с тобой<br>Ты внесла в мою жизнь много нового, и ассоцируещься ассоцируещься с:<br>запахом костра, воздухом после дождя, ароматным кофе и лучшими днями лета</div>
+			<div class="photocard" id="bottom">
+				<div class="image-container">
+					<img src="static/image/photo4.jpg" class="card-image" alt="фотка 4">
+					<img src="static/image/photo5.jpg"class="card-image" alt="фотка 5">
+				</div>
+			</div>
+			<button class='next-step' id='toCollage'>&rarr;</button>
+		</section>
+		<section id="collage">
+			<div class="p-c-Bg" id="collage-bg1"></div>
+			<div class="p-c-Bg" id="collage-bg2"></div>
+			<div class="title-collage">Наши моменты</div>
+			<button class="next-step" id="toStatistics">&rarr;</button>
+		</section>
+		<section id="statistics">
+			<div class="stats-grid">
+				<div></div>
+				<div class="title">Статистика</div>
+				<div></div>
+				<div class="stat-card" id="days">
+					<div class="preview">
+						<button class="openCardButton" id="days-btn">Открыть</button>
+					</div>
+					<div class="card-content">
+					</div>
+				</div>
+				<div class="stat-card" id="coffe">
+					<div class="preview">
+						<button class="openCardButton" id="coffe-btn">Открыть</button>
+					</div>
+					<div class="card-content">
+					</div>
+				</div>
+				<div class="stat-card" id="love">
+					<div class="preview">
+						<button class="openCardButton" id="love-btn">Открыть</button>
+					</div>
+					<div class="card-content">
+					</div>
+				</div>
+				<div></div>
+				<button class="openAll">Открыть все</button>
+			</div>
+			<button class='next-step' id='to10say'>&rarr;</button>
+		</section>
+		<section id="10_reasons_to_say"></section>
+		<section id='end'></section>
+	</body>
+	<script src="script.js"></script>
+	<script src="static/js/animHeart.js"></script>
+	<script src="static/js/AnimateAssociation.js"></script>	
+	<script src="static/js/sectionControl.js"></script>
+	<script src="static/js/collageSection.js"></script>
+</html>
